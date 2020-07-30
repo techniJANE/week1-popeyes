@@ -10,7 +10,7 @@ You can utilize any other resources you wish. Have fun with it chicken lovers ðŸ
 
 ## Demo
 
-![Demo](solution.png)
+![Demo](assets/images/solution.png)
 
 ## Setup
 
