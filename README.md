@@ -28,4 +28,4 @@ You can utilize any other resources you wish. Have fun with it chicken lovers ðŸ
   - `git push -u origin master`
 - Refresh your github page and you should see your new repo with your commit changes!
 - In your repo's Settings, host your master branch with GH Pages
-- Open an issue on the rbi-learning/popeyes_static_menu repository titled `YourName Week 1 Project` and the GH hosted link as the comment
+- Open an issue [here](https://github.com/rbi-learning/popeyes_static_menu/issues) titled `YourName Week 1 Project` and the GH hosted link as the comment
