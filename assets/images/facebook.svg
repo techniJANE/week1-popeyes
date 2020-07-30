@@ -1,0 +1,8 @@
+<svg viewBox="0 0 10 20" xmlns="http://www.w3.org/2000/svg">
+  <title lang="en">Follow us on Facebook</title>
+  <path
+    fill="#FFFFFF"
+    d="M1.999 3.772v2.682H0v3.28h1.999v9.744h4.106V9.733h2.756s.258-1.572.383-3.291H6.12V4.2c0-.335.447-.786.89-.786h2.237V0H6.206C1.897 0 2 3.282 2 3.772z"
+    fillRule="evenodd"
+  />
+</svg>
