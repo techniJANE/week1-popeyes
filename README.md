@@ -1,7 +1,5 @@
 # Popeyes Menu
 
-### Directions
-
 Mocking <https://www.popeyes.com/explore-menu>
 
 Using only HTML/CSS, mock the Popeyes menu as best you can.
@@ -12,11 +10,7 @@ You can utilize any other resources you wish. Have fun with it chicken lovers ðŸ
 
 ![Demo](assets/images/solution.png)
 
-## Setup
-
-- `npx serve`
-
-## Instructions to Submit
+### Directions
 
 - Clone this template repo into your projects folder
   - `git clone git@github.com:rbi-learning/popeyes_static_menu.git`
