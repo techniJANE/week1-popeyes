@@ -14,7 +14,7 @@
   background-color: white;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   font-family: chicken_sans_bold;
 }
 
@@ -27,13 +27,14 @@ header ul {
 
 #receive-order {
   text-align: center;
-  color: rgb(150,150,150);
+  color: rgb(150, 150, 150);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 16rem;
   font-family: Helvetica Neue;
   font-size: 15px;
+  z-index: 2;
 }
 
 #explore-menu {
@@ -41,8 +42,8 @@ header ul {
   font-family: chicken_sans_bold;
 }
 
-#explore-menu h1{
-  background-color: rgb(254,125,8);
+#explore-menu h1 {
+  background-color: rgb(254, 125, 8);
   color: white;
   height: 13rem;
   display: grid;
@@ -59,22 +60,32 @@ header ul {
 main {
   font-family: chicken_sans_bold;
   max-width: 80rem;
-  margin: 5rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
   grid-gap: 1rem;
+  background-color: rgb(244, 241, 239);
 }
 
 section {
   background-color: white;
   display: grid;
-  place-items: center;
   text-align: left;
   padding: 1rem;
 }
 
 section img {
-  width: 16.5rem;
+  width: 264px;
   height: 13rem;
+  place-items: center;
   object-fit: cover;
+}
+
+header h2 {
+  margin: auto;
+}
+
+#navigation-bar {
+  display: inline;
 }
