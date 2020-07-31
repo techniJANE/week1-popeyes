@@ -6,3 +6,75 @@
 * {
   box-sizing: border-box;
 }
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-family: chicken_sans_bold;
+}
+
+header ul {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  font-family: chicken_sans_bold;
+}
+
+#receive-order {
+  text-align: center;
+  color: rgb(150,150,150);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16rem;
+  font-family: Helvetica Neue;
+  font-size: 15px;
+}
+
+#explore-menu {
+  text-align: center;
+  font-family: chicken_sans_bold;
+}
+
+#explore-menu h1{
+  background-color: rgb(254,125,8);
+  color: white;
+  height: 13rem;
+  display: grid;
+  align-items: center;
+  font-size: 6rem;
+  position: relative;
+  font-family: chicken_sans_bold;
+}
+
+#change {
+  color: rgb(190, 90, 11);
+}
+
+main {
+  font-family: chicken_sans_bold;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  grid-gap: 1rem;
+}
+
+section {
+  background-color: white;
+  display: grid;
+  place-items: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+section img {
+  width: 16.5rem;
+  height: 13rem;
+  object-fit: cover;
+}
