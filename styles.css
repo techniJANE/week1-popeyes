@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Chicken sans-serif;
+}
+
 #top-header {
   display: flex;
   justify-content: space-between;
@@ -16,25 +20,43 @@
   top: 0;
   z-index: 3;
   font-family: chicken_sans_bold;
+  height: 6rem;
 }
 
-header ul {
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
-  font-family: chicken_sans_bold;
+#header-left-buttons {
+  color: black;
+  text-decoration: none;
+  margin-right: auto;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 19px;
+}
+
+#header-left-buttons a {
+  color: black;
 }
 
 #receive-order {
   text-align: center;
   color: rgb(150, 150, 150);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 16rem;
+  justify-content: center;
   font-family: Helvetica Neue;
   font-size: 15px;
-  z-index: 2;
+  padding-bottom: 0;
+}
+
+#popeyeslogo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#receive-order a {
+  color: rgb(190, 90, 11);
 }
 
 #explore-menu {
@@ -45,12 +67,12 @@ header ul {
 #explore-menu h1 {
   background-color: rgb(254, 125, 8);
   color: white;
-  height: 13rem;
+  height: 15rem;
   display: grid;
   align-items: center;
   font-size: 6rem;
-  position: relative;
   font-family: chicken_sans_bold;
+  justify-content: center;
 }
 
 #change {
@@ -60,7 +82,7 @@ header ul {
 main {
   font-family: chicken_sans_bold;
   max-width: 80rem;
-  margin: 3rem auto 0 auto;
+  margin: 3rem auto 3rem auto;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
@@ -68,11 +90,17 @@ main {
   background-color: rgb(244, 241, 239);
 }
 
+body {
+  background-color: rgb(244, 241, 239);
+}
+
 section {
   background-color: white;
   display: grid;
   text-align: left;
-  padding: 1rem;
+  width: 16.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 section img {
@@ -80,6 +108,21 @@ section img {
   height: 13rem;
   place-items: center;
   object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+section h2 {
+  padding-left: 1rem;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+section p {
+  padding-left: 1rem;
+  font-size: 18px;
+  color: rgb(190, 90, 11);
 }
 
 header h2 {
@@ -88,4 +131,54 @@ header h2 {
 
 #navigation-bar {
   display: inline;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: chicken_sans_bold;
+  padding: 2rem;
+  font-size: small;
+}
+
+#sign-up {
+  background-color: rgb(190, 90, 11);
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid;
+  border-color: rgb(190, 90, 11);
+}
+
+#sign-up a {
+  color: white;
+}
+
+#cart {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  color: rgb(190, 90, 11);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-color: rgb(190, 90, 11);
+  border: solid;
+}
+
+section h2 a {
+  color: black;
+}
+
+section p a {
+  color: rgb(190, 90, 11);
+}
+
+#right-top {
+  text-decoration: none;
+  margin-right: auto;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
 }
