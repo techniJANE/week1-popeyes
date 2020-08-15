@@ -5,180 +5,238 @@
 
 * {
   box-sizing: border-box;
+  font-family: "chicken_sans_bold";
 }
 
 body {
-  font-family: Chicken sans-serif;
+  background-color: #f4f6f8;
+  font-family: "chicken_sans_bold";
+  margin: 0;
 }
 
-#top-header {
+nav {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
   top: 0;
-  z-index: 3;
-  font-family: chicken_sans_bold;
-  height: 6rem;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: auto;
+  padding: 18px 40px;
 }
 
-#header-left-buttons {
-  color: black;
+nav a {
   text-decoration: none;
-  margin-right: auto;
-  margin: 0.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 19px;
+  color: #1f1f1f;
+  font-size: 1.125rem;
+  padding-right: 1.5rem;
 }
 
-#header-left-buttons a {
-  color: black;
+nav a:hover {
+  color: #808080;
 }
 
-#receive-order {
-  text-align: center;
-  color: rgb(150, 150, 150);
+.leftNavWrapper {
+  width: 450px;
+}
+
+.leftNavWrapper a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 1.125rem;
+  padding-right: 1.5rem;
+}
+
+.popeyesLogo {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.rightNavWrapper {
+  width: 450px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-family: Helvetica Neue;
-  font-size: 15px;
-  padding-bottom: 0;
+  padding: 5px;
+  justify-content: flex-end;
 }
 
-#popeyeslogo {
+.signUp {
+  border: none;
+  background-color: #be5a07;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.cart {
+  border: none;
+  background-color: transparent;
+  color: #be5a07;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
+  border-radius: 2rem;
+  border-color: #be5a07;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.4rem 1.125rem;
+  margin-left: 30px;
 }
 
-#receive-order a {
-  color: rgb(190, 90, 11);
+.cart img {
+  height: 1.1rem;
+  width: 1.4rem;
+}
+
+main {
+  margin-top: 8rem;
 }
 
 #explore-menu {
   text-align: center;
-  font-family: chicken_sans_bold;
 }
 
 #explore-menu h1 {
-  background-color: rgb(254, 125, 8);
-  color: white;
-  height: 15rem;
-  display: grid;
-  align-items: center;
+  background-color: #ff8c00;
+  color: #fff;
+  text-align: center;
   font-size: 6rem;
-  font-family: chicken_sans_bold;
-  justify-content: center;
+  padding: 4rem 0rem;
 }
 
-#change {
-  color: rgb(190, 90, 11);
+.exploreTextWrapper {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
-main {
-  font-family: chicken_sans_bold;
-  max-width: 80rem;
-  margin: 3rem auto 3rem auto;
+.exploreTextWrapper h3 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+#preview-grid {
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 1rem;
-  background-color: rgb(244, 241, 239);
+  padding: 2rem;
 }
 
-body {
-  background-color: rgb(244, 241, 239);
-}
-
-section {
-  background-color: white;
+.previewCard {
   display: grid;
-  text-align: left;
-  width: 16.5rem;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-section img {
-  width: 264px;
-  height: 13rem;
-  place-items: center;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-section h2 {
-  padding-left: 1rem;
-  font-size: 18px;
-  color: black;
+  grid-template-rows: auto 1fr;
+  background-color: #fff;
   text-decoration: none;
+  border-radius: 10px;
 }
 
-section p {
-  padding-left: 1rem;
-  font-size: 18px;
-  color: rgb(190, 90, 11);
+.previewCard img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
 }
 
-header h2 {
-  margin: auto;
+.cardContent {
+  padding: 18px;
 }
 
-#navigation-bar {
-  display: inline;
+.cardContent h4 {
+  color: #1f1f1f;
+  font-size: 1.125rem;
+}
+
+.cardContent span {
+  color: #be5a07;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  #preview-grid {
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+  }
 }
 
 footer {
-  background-color: black;
-  color: white;
-  font-family: chicken_sans_bold;
-  padding: 2rem;
-  font-size: small;
-}
-
-#sign-up {
-  background-color: rgb(190, 90, 11);
-  border-radius: 1rem;
-  padding: 0.2rem 1rem;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: solid;
-  border-color: rgb(190, 90, 11);
-}
-
-#sign-up a {
-  color: white;
-}
-
-#cart {
-  background-color: white;
-  border-radius: 1rem;
-  padding: 0.2rem 1rem;
-  color: rgb(190, 90, 11);
-  text-transform: uppercase;
-  text-decoration: none;
-  border-color: rgb(190, 90, 11);
-  border: solid;
-}
-
-section h2 a {
-  color: black;
-}
-
-section p a {
-  color: rgb(190, 90, 11);
-}
-
-#right-top {
-  text-decoration: none;
-  margin-right: auto;
-  margin: 0.5rem;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  padding: 3rem 2rem 0px 6rem;
+  color: #fff;
+}
+
+.footerLinksWrapper a {
+  text-decoration: none;
+  padding: 0px 1rem;
+  border-right: 1px solid #4a4a4a;
+  color: #fff;
+}
+
+.footerLinksWrapper a:first-child {
+  padding-left: 0px;
+}
+
+.footerLinksWrapper a:last-child {
+  border: none;
+}
+
+.footerLinksWrapper a:hover {
+  text-decoration: underline;
+}
+
+.primaryFooterLinks {
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+
+.secondaryFooterLinks a {
+  font-size: 0.75rem;
+}
+
+.footerBottom {
+  display: inherit;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.additionalFooterText {
+  font-size: 0.88rem;
+}
+
+.iconContainer {
+  display: flex;
+}
+
+.iconContainer a {
+  background-color: #be5a07;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 0.5rem;
+}
+
+.iconContainer a:hover {
+  background-color: #ab4600;
+  cursor: pointer;
+}
+
+.iconContainer img {
+  width: 50%;
+  height: 50%;
+}
+
+.loveThatChicken {
+  width: 240px;
+  margin-right: 4rem;
 }

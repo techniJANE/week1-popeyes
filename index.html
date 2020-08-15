@@ -11,140 +11,136 @@
       type="image/x-icon"
     />
   </head>
-  <style>
-    A {
-      text-decoration: none;
-    }
-  </style>
   <body>
-    <header id="top-header">
-      <div id="header-left-buttons">
-        <a href="https://www.popeyes.com/store-locator/service-mode"
-          >Order &nbsp&nbsp&nbsp</a
-        >
-        <a href="https://www.popeyes.com/store-locator/service-mode"
-          >Restaurants&nbsp&nbsp&nbsp</a
-        >
-        <a href="https://www.popeyes.com/offers">Offers&nbsp&nbsp&nbsp</a>
-        <a href="#">More&nbsp&nbsp&nbsp</a>
-      </div>
-      <h2 id="popeyeslogo">
-        <img
-          src="https://www.wattagnet.com/ext/resources/Images-by-month-year/20_06/Popeyes_Logo1.jpg"
-          width="150px"
-          height="90px"
-        />
-      </h2>
-      <div id="right-top">
-        <h3 id="sign-up">
-          <a href="https://www.popeyes.com/signup"> Sign Up</a>
-        </h3>
-        <h3 id="cart">Cart</h3>
-      </div>
-    </header>
-    <header id="receive-order">
-      <h3>How would you like to receive this order? &nbsp &nbsp &nbsp</h3>
-      <h3 id="change">
-        <a href="https://www.popeyes.com/store-locator/service-mode">Change</a>
-      </h3>
-    </header>
-    <header id="explore-menu">
-      <h1>Explore Our Menu</h1>
-      <h2>
-        Explore our menu below. You can also click on the <br />
-        'Restaurants' tab to find a store or place an order.
-      </h2>
+    <header>
+      <nav>
+        <div class="leftNavWrapper">
+          <a href="#">Order</a>
+          <a href="#">Restaurants</a>
+         <a href="#">Offers</a>
+          <a href="#">More &#9662</a>
+        </div>
+        <a href="#" class="popeyesLogo">
+          <img src="assets/images/popeyes-logo.svg" alt="Popeyes Logo"/>
+        </a>
+        <div class="rightNavWrapper">
+          <button class=signUp"">sign up</button>
+          <button class="cart">
+            <img src="assets/images/bag-icon.svg" alt="cart"/>
+            <span id="cartAmount">0</span>
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
-      <section id="chicken-sandwich">
-        <a href="https://www.popeyes.com/chicken-sandwich"
-          ><img
-            alt="chicken sandwich"
-            src="assets/images/7304dfe16fc5c9b945b5450f0a208583a0acaa6c-8116x6612.png"
-        /></a>
-        <h2>
-          <a href="https://www.popeyes.com/chicken-sandwich"
-            >Chicken Sandwich</a
-          >
-        </h2>
-        <p><a href="https://www.popeyes.com/chicken-sandwich">See More</a></p>
+      <section id="explore-menu">
+        <h1>Explore Our Menu</h1>
+        <div class="exploreTextWrapper">
+          <h3>Explore our menu below. You can also click on the 'Restaurants' tab to find a store or place an order.</h3>
+        </div>
       </section>
-      <section id="signature">
-        <a href="https://www.popeyes.com/signature-chicken"
-          ><img
-            alt="tenders"
-            src="assets/images/618d8d59a8c0c89ac9a2c3e039f6c988ef85abde-7216x5412.png"
-        /></a>
-        <h2>
-          <a href="https://www.popeyes.com/signature-chicken"
-            >Signature Chicken</a
-          >
-        </h2>
-        <p><a href="https://www.popeyes.com/signature-chicken">See More</a></p>
-      </section>
-      <section id="tenders">
-        <a href="https://www.popeyes.com/tenders-wings">
-          <img
-            alt="tenders"
-            src="assets/images/d12f488e9ba11cbf4733630c65dd57ae8c974596-812x480.png"
-        /></a>
-        <h2><a href="https://www.popeyes.com/tenders-wings">Tenders</a></h2>
-        <p><a href="https://www.popeyes.com/tenders-wings">See More</a></p>
-      </section>
-      <section id="seafood">
-        <a href="https://www.popeyes.com/seafood"
-          ><img
-            alt="seafood"
-            src="assets/images/6690440b15222b9e8f0956a301605465f723545b-1680x960.png"
-        /></a>
-        <h2><a href="https://www.popeyes.com/seafood">Seafood</a></h2>
-        <p><a href="https://www.popeyes.com/seafood">See More</a></p>
-      </section>
-      <section id="sides">
-        <a href="https://www.popeyes.com/sides"
-          ><img
-            alt="sides"
-            src="assets/images/7548d862c292aa0fdb2c88b90e630161d025ecd8-7000x4000.png"
-        /></a>
-        <h2><a href="https://www.popeyes.com/sides">Sides</a></h2>
-        <p><a href="https://www.popeyes.com/sides">See More</a></p>
-      </section>
-      <section id="beverage">
-        <a href="https://www.popeyes.com/beverages"
-          ><img
-            alt="beverages"
-            src="assets/images/c5a63dab389599a1892a03d865bf425d48c53092-7216x5412.png"
-        /></a>
-        <h2><a href="https://www.popeyes.com/beverages">Beverages</a></h2>
-        <p><a href="https://www.popeyes.com/beverages">See More</a></p>
-      </section>
-      <section id="desserts">
-        <a href="https://www.popeyes.com/desserts"
-          ><img
-            alt="desserts"
-            src="assets/images/40f51d865805e4ea130ea432171d9515a0b694a2-812x480.png"
-        /></a>
-        <h2><a href="https://www.popeyes.com/desserts">Desserts</a></h2>
-        <p><a href="https://www.popeyes.com/desserts">See More</a></p>
+      <section id="preview-grid">
+        <a href="#" class="previewCard">
+          <img src="assets/images/7304dfe16fc5c9b945b5450f0a208583a0acaa6c-8116x6612.png" alt="chicken sandwich"/>
+          <div class="cardContent">
+            <h4>Chicken Sandwich</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/618d8d59a8c0c89ac9a2c3e039f6c988ef85abde-7216x5412.png" alt="signature chicken"/>
+          <div class="cardContent">
+            <h4>Signature Chicken</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/d12f488e9ba11cbf4733630c65dd57ae8c974596-812x480.png" alt="tender"/>
+          <div class="cardContent">
+            <h4>Tender & Wings</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/6690440b15222b9e8f0956a301605465f723545b-1680x960.png" alt="seafood"/>
+          <div class="cardContent">
+            <h4>Seafood</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/7548d862c292aa0fdb2c88b90e630161d025ecd8-7000x4000.png" alt="sides"/>
+          <div class="cardContent">
+            <h4>Sides</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/c5a63dab389599a1892a03d865bf425d48c53092-7216x5412.png" alt="beverages"/>
+          <div class="cardContent">
+            <h4>Beverages</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/40f51d865805e4ea130ea432171d9515a0b694a2-812x480.png" alt="desserts"/>
+          <div class="cardContent">
+            <h4>Desserts</h4>
+            <span>See More</span>
+          </div>
+        </a>
+        <a href="#" class="previewCard">
+          <img src="assets/images/5ee97528ac0ce09e5c795201586ff94485fb98c1-7000x4000.png" alt="kids meal"/>
+          <div class="cardContent">
+            <h4>Kids Meal</h4>
+            <span>See More</span>
+          </div>
+        </a>
       </section>
     </main>
     <footer>
-      <h3>
-        Menu | Company | Our Story | Franchise Opportunities | Careers |
-        Trademarks | Support
-      </h3>
-      <h4>
-        Terms of Service | Privacy Policy | Accessibility Statement | Sitemap |
-        Foundation | Investor Relations | Diagnostics
-      </h4>
-      <h4>
-        TM & © 2020 Popeyes Louisiana Kitchen, Inc.
-      </h4>
-      <h4>Prices may vary.</h4>
-      <h4>
-        All pictures are shown for illustrative purposes only. Actual product
-        may vary due to product enhancement.
-      </h4>
+      <div class="footerLinksWrapper">
+        <div class="primaryFooterLinks">
+          <a href="#">Menu</a>
+          <a href="#">Company</a>
+          <a href="#">Our Story</a>
+          <a href="#">Franchise Opportunities</a>
+          <a href="#">Careers</a>
+          <a href="#">Trademarks</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="secondaryFooterLinks">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility Statement</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Foundation</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Diagnostics</a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <div class="additionalFooterText">
+          <p>TM & © 2020 Popeyes Louisiana Kitchen, Inc.</p>
+          <p>Prices may vary.</p>
+          <p>All pictures are shown for illustrative purposes only. Actual product may vary due to product enhancement.</p>
+          <div class="iconContainer">
+            <a href="#">
+              <img src="assets/images/facebook.svg"/>
+            </a>
+            <a href="#">
+              <img src="assets/images/twitter.svg"/>
+            </a>
+            <a href="#">
+              <img src="assets/images/youtube.svg"/>
+            </a>
+            <a href="#">
+              <img src="assets/images/instagram.svg"/>
+            </a>
+          </div>
+        </div>
+        <img src="assets/images/love-that-chicken.svg" class="loveThatChicken"/>
+      </div>
     </footer>
   </body>
 </html>
