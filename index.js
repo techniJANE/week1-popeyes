@@ -6,7 +6,7 @@ const pg = require('pg');
 const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 
 const app = express();
-app.use(express.static('public'));
+app.use(express.static('Public'));
 app.use(express.json());
 
 app.post('/clicks', async function(request, response) {
