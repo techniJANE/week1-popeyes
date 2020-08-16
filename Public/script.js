@@ -7,11 +7,13 @@ const handleClick = async event => {
 
   const whereUserClickedX = Math.round(event.pageX);
   const whereUserClickedY = Math.round(event.pageY);
-  const eventPath = event.path.find(
-    item => item.dataset.trackingId !== undefined
+  const eventPath = event.path;
+  const tracking = eventPath.find(
+    item => item.dataset.trackingid !== undefined
   );
-  const eventTarget = event.target.innerText;
-  const timeUserClicked = Math.round(event.timestamp);
+  console.log(tracking);
+  const eventTarget = event.target.outerHTML;
+  const timeUserClicked = Math.round(event.timeStamp);
   const userId = localStorage.getItem('userId');
 
   const url = '/clicks';
@@ -24,7 +26,7 @@ const handleClick = async event => {
     body: JSON.stringify({
       clickX: whereUserClickedX,
       clickY: whereUserClickedY,
-      path: eventPath,
+      tracking: String(tracking),
       target: eventTarget,
       time: timeUserClicked,
       id: userId,
