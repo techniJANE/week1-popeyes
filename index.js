@@ -36,7 +36,8 @@ db.query(`
     target VARCHAR(200) NOT NULL,
     tracking VARCHAR(200) NOT NULL,
     clickX VARCHAR(200) NOT NULL,
-    clickY VARCHAR(200) NOT NULL
+    clickY VARCHAR(200) NOT NULL,
+    userId VARCHAR(200) NOT NULL
   );
 `);
 
