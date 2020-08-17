@@ -8,9 +8,8 @@ const handleClick = async event => {
   const whereUserClickedX = Math.round(event.pageX);
   const whereUserClickedY = Math.round(event.pageY);
   const eventPath = event.path;
-  const tracking = eventPath.find(
-    item => item.dataset.trackingid !== undefined
-  );
+  const tracking = eventPath.find(item => item.dataset.trackingid !== undefined)
+    .dataset.trackingid;
   console.log(tracking);
   const eventTarget = event.target.outerHTML;
   const timeUserClicked = Math.round(event.timeStamp);
